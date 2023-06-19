@@ -1,28 +1,32 @@
 #include <stdio.h>
+/**
+ * main - create 2 pairs of number
+ * Return: 0
+ */
+int main(void)
+{
+        int i, j;
 
-int main() {
-    int i, j;
+        for (i = 0; i <= 99; i++)
+        {
+                for (j = i; j <= 99; j++)
+                {
+                        if (j != i)
+                        {
+                                putchar(i / 10 + 48);
+                                putchar(i % 10 + 48);
+                                putchar(' ');
+                                putchar(j / 10 + 48);
+                                putchar(j % 10 + 48);
 
-    for (i = 0; i <= 99; i++) {
-        for (j = i; j <= 99; j++) {
-            // Print first two-digit number
-            putchar('0' + (i / 10));
-            putchar('0' + (i % 10));
-
-            // Print space separator
-            putchar(' ');
-
-            // Print second two-digit number
-            putchar('0' + (j / 10));
-            putchar('0' + (j % 10));
-
-            // Print comma and space separator if not the last combination
-            if (i != 99 || j != 99) {
-                putchar(',');
-                putchar(' ');
-            }
+                                if (i * 100 + j != 9899)
+                                {
+                                        putchar(',');
+                                        putchar(' ');
+                                }
+                        }
+                }
         }
-    }
-
-    return 0;
+        putchar('\n');
+        return (0);
 }
