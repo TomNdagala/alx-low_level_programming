@@ -1,2 +1,1 @@
-Debugging yeah
-Kutoa wadudu
+0x03. C - Debugging
