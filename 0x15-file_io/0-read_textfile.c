@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 
+/*read textfile read text file print to STDOUT Clioooo */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {

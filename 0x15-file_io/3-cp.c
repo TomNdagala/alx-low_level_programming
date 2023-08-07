@@ -4,7 +4,7 @@
 
 char *create_buffer(char *file);
 void close_file(int fd);
-
+/*create buffer allocates 1024 bytes yes cleoo*/
 
 char *create_buffer(char *file)
 {
