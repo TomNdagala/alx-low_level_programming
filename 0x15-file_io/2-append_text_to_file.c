@@ -1,6 +1,14 @@
 #include "main.h"
 
-/*CREATE FILE CREATES FILES CLEO*/
+/**
+ * append_text_to_file - Appends text at the end of a file.
+ * @filename: A pointer to the name of the file.
+ * @text_content: The string to + to the end of the file.
+ *
+ * Return: If the fun fails or filename is NULL - -1.
+ *         If the file doesn't exist the user lacks write permissions - -1.
+ *         Otherwise - 1.
+ */
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int o, w, len = 0;
